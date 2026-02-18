@@ -1,4 +1,8 @@
 import React from 'react';
+import image1 from '../assets/info-1.jpg';
+import image2 from '../assets/trendingcourse-2.jpg';
+import image3 from '../assets/trendingcourse-3.jpg';
+import image4 from '../assets/trendingcourse-4.jpg';
 
 const WorldClassSection = () => {
   return (
@@ -22,7 +26,7 @@ const WorldClassSection = () => {
           {/* Left Column: Tall Image */}
           <div className="w-full h-full">
             <img 
-              src="https://images.unsplash.com/photo-1434030216411-0b793f4b4173?auto=format&fit=crop&q=80" 
+              src={image1} 
               alt="Person studying with laptop" 
               className="w-full h-full object-cover rounded-[3rem]"
             />
@@ -31,12 +35,12 @@ const WorldClassSection = () => {
           {/* Middle Column: Two Stacked Images */}
           <div className="grid grid-rows-2 gap-6 h-full">
             <img 
-              src="https://images.unsplash.com/photo-1523050854058-8df90110c9f1?auto=format&fit=crop&q=80" 
+              src={image2} 
               alt="Graduates" 
               className="w-full h-full object-cover rounded-[2.5rem]"
             />
             <img 
-              src="https://images.unsplash.com/photo-1541339907198-e08759dfc3f0?auto=format&fit=crop&q=80" 
+              src={image3} 
               alt="Close up of graduation gown" 
               className="w-full h-full object-cover rounded-[2.5rem]"
             />
@@ -45,7 +49,7 @@ const WorldClassSection = () => {
           {/* Right Column: Large Image */}
           <div className="w-full h-full">
             <img 
-              src="https://images.unsplash.com/photo-1588196749597-9ff075ee6b5b?auto=format&fit=crop&q=80" 
+              src={image4} 
               alt="Online learning session" 
               className="w-full h-full object-cover rounded-[3.5rem]"
             />

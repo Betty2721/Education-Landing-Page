@@ -41,7 +41,7 @@ const ExploreTopics = () => {
 
         {/* Center Button */}
         <div className="flex justify-center">
-          <button className="bg-[#FF6B00] hover:bg-orange-600 text-white px-10 py-3 rounded-full font-bold text-sm transition-all shadow-lg">
+          <button className="bg-[#FF6B00] hover:bg-white hover:text-black text-white px-10 py-3 rounded-full font-bold text-sm transition-all shadow-lg">
             Browse all Topics
           </button>
         </div>

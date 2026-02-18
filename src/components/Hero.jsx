@@ -1,4 +1,5 @@
 import React from 'react';
+import heroBg from '../assets/Hero-1.jpg'
 
 const Hero = () => {
   return (
@@ -7,20 +8,12 @@ const Hero = () => {
       <div 
         className="absolute inset-0 z-0 opacity-60"
         style={{
-          backgroundImage: 'url("https://images.unsplash.com/photo-1532012197267-da84d127e765?auto=format&fit=crop&q=80")',
+          // 2. Use the imported variable here
+          backgroundImage: `url(${heroBg})`,
           backgroundSize: 'cover',
           backgroundPosition: 'center'
         }}
       ></div>
-
-      {/* Decorative Lightbulb/Graphic (Mockup) */}
-      <div className="absolute left-10 bottom-0 z-10 hidden lg:block">
-         <img 
-          src="https://cdn-icons-png.flaticon.com/512/3209/3209559.png" 
-          alt="Learning Graphic" 
-          className="w-96 opacity-80 filter brightness-125"
-         />
-      </div>
 
       {/* Content */}
       <div className="relative z-20 text-center max-w-3xl px-6">
@@ -33,16 +26,10 @@ const Hero = () => {
           more-or-less normal distribution of letters.
         </p>
         
-        <button className="bg-[#5C34D2] hover:bg-purple-700 text-white px-10 py-3 rounded-full font-semibold transition-all">
+        <button className="bg-[#FF6B00] hover:bg-white hover:text-black text-white px-10 py-3 rounded-full font-semibold transition-all">
           Get Started Today
         </button>
 
-        {/* Carousel Indicators */}
-        <div className="flex justify-center gap-2 mt-12">
-          <div className="w-3 h-3 border-2 border-white rounded-full cursor-pointer"></div>
-          <div className="w-3 h-3 bg-white rounded-full cursor-pointer"></div>
-          <div className="w-3 h-3 bg-white rounded-full cursor-pointer"></div>
-        </div>
       </div>
     </section>
   );

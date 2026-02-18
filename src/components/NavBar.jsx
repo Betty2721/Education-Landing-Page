@@ -5,7 +5,7 @@ const NavBar = () => {
   return (
     <nav className="w-full">
       {/* Top Bar */}
-      <div className="bg-[#5C34D2] text-white py-2 px-6 flex justify-between items-center text-sm">
+      <div className="bg-[#001140] text-white py-2 px-6 flex justify-between items-center text-sm">
         <div className="flex items-center gap-6">
           <div className="flex items-center gap-2">
             <Mail size={14} /> <span>hello@borcelle.com</span>
@@ -33,15 +33,15 @@ const NavBar = () => {
         </div>
 
         <div className="hidden md:flex items-center gap-8 text-sm font-bold text-gray-700">
-          <a href="#" className="hover:text-purple-700">COURSES</a>
-          <a href="#" className="hover:text-purple-700">ACADEMICS</a>
-          <a href="#" className="hover:text-purple-700">WHY BORCELLE</a>
-          <a href="#" className="hover:text-purple-700">STUDENT LIFE</a>
-          <a href="#" className="hover:text-purple-700">CONTACT</a>
+          <a href="#" className="hover:text-[#FF6B00]">COURSES</a>
+          <a href="#" className="hover:text-[#FF6B00]">ACADEMICS</a>
+          <a href="#" className="hover:text-[#FF6B00]">WHY BORCELLE</a>
+          <a href="#" className="hover:text-[#FF6B00]">STUDENT LIFE</a>
+          <a href="#" className="hover:text-[#FF6B00]">CONTACT</a>
         </div>
 
         <div className="flex items-center gap-4">
-          <button className="bg-[#FF6B00] text-white px-6 py-2 rounded-full font-bold text-sm hover:bg-orange-600 transition-colors">
+          <button className="bg-[#FF6B00] text-white px-6 py-2 rounded-full font-bold text-sm hover:bg-white hover:text-black transition-colors shadow-lg">
             ENROLL NOW
           </button>
           <Search size={20} className="text-gray-600 cursor-pointer" />

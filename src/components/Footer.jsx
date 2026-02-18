@@ -5,22 +5,21 @@ const Footer = () => {
   return (
     <footer className="bg-white pt-10">
       {/* Main Footer Container with rounded top-left corner */}
-      <div className="bg-[#051139] text-white rounded-tl-[100px] px-8 py-16 md:px-20">
+      <div className="bg-[#051139] text-white px-8 py-16 md:px-20">
         <div className="max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-3 gap-12">
           
           {/* Column 1: Brand & About */}
           <div className="space-y-6">
             <div className="flex items-center gap-2">
-              <div className="bg-indigo-500 p-1 rounded">
-                <span className="text-xs font-bold">🎓</span>
-              </div>
               <h2 className="text-xl font-bold tracking-tight">
                 BORCELLE <br />
                 <span className="text-xs font-normal opacity-80">Online Academy</span>
               </h2>
             </div>
             <p className="text-gray-400 text-sm leading-relaxed">
-              There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised words which don't look even slightly believable.
+              There are many variations of passages of Lorem Ipsum available, but the majority
+              have suffered alteration in some form, by injected humour, or randomised words
+              which don't look even slightly believable.
             </p>
             <div className="flex gap-4">
               <Facebook className="w-5 h-5 cursor-pointer hover:text-indigo-400 transition-colors" />
@@ -34,11 +33,11 @@ const Footer = () => {
           <div className="md:pl-12">
             <h3 className="text-lg font-bold mb-6">Quick Links</h3>
             <ul className="space-y-4 text-sm text-gray-400">
-              <li className="hover:text-white cursor-pointer transition-colors">About Us</li>
-              <li className="hover:text-white cursor-pointer transition-colors">FAQ</li>
-              <li className="hover:text-white cursor-pointer transition-colors">Contact Us</li>
-              <li className="hover:text-white cursor-pointer transition-colors">Terms & Condition</li>
-              <li className="hover:text-white cursor-pointer transition-colors">Privacy Policy</li>
+              <li className="hover:text-[#FF5C00] cursor-pointer transition-colors">About Us</li>
+              <li className="hover:text-[#FF5C00] cursor-pointer transition-colors">FAQ</li>
+              <li className="hover:text-[#FF5C00] cursor-pointer transition-colors">Contact Us</li>
+              <li className="hover:text-[#FF5C00] cursor-pointer transition-colors">Terms & Condition</li>
+              <li className="hover:text-[#FF5C00] cursor-pointer transition-colors">Privacy Policy</li>
             </ul>
           </div>
 

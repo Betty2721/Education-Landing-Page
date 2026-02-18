@@ -1,12 +1,16 @@
 import React from 'react';
 import { Star, ArrowUpRight } from 'lucide-react';
+import image1 from '../assets/trendingcourse-1.jpg';
+import image2 from '../assets/trendingcourse-2.jpg';
+import image3 from '../assets/trendingcourse-3.jpg';
+import image4 from '../assets/trendingcourse-4.jpg';
 
 const TrendingCourses = () => {
   const courses = [
-    { id: 1, img: "https://images.unsplash.com/photo-1523240715630-979bb07019a2?auto=format&fit=crop&q=80" },
-    { id: 2, img: "https://images.unsplash.com/photo-1524178232363-1fb280714553?auto=format&fit=crop&q=80" },
-    { id: 3, img: "https://images.unsplash.com/photo-1434030216411-0b793f4b4173?auto=format&fit=crop&q=80" },
-    { id: 4, img: "https://images.unsplash.com/photo-1529070538774-1843cb3265df?auto=format&fit=crop&q=80" },
+    { id: 1, img: image1 },
+    { id: 2, img: image2 },
+    { id: 3, img: image3 },
+    { id: 4, img: image4 },
   ];
 
   return (
@@ -42,7 +46,7 @@ const TrendingCourses = () => {
                   </div>
 
                   {/* Action Icon */}
-                  <div className="bg-[#5C34D2] p-2 rounded-full text-white cursor-pointer hover:bg-purple-700 transition-colors">
+                  <div className="bg-[#FF6B00] p-2 rounded-full text-white cursor-pointer hover:bg-[#001140] transition-colors">
                     <ArrowUpRight size={16} />
                   </div>
                 </div>
@@ -52,7 +56,7 @@ const TrendingCourses = () => {
         </div>
 
         {/* Footer Button */}
-        <button className="bg-black text-white px-10 py-3 rounded-full font-bold text-sm hover:bg-gray-800 transition-all">
+        <button className="bg-[#FF6B00] text-white px-10 py-3 rounded-full font-bold text-sm hover:bg-white hover:text-black transition-all shadow-lg">
           Browse all Courses
         </button>
       </div>

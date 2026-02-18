@@ -1,5 +1,6 @@
 import React from 'react';
 import { CheckCircle2 } from 'lucide-react';
+import image1 from '../assets/info-1.jpg';
 
 const FeatureSection = () => {
   const points = [
@@ -28,7 +29,7 @@ const FeatureSection = () => {
             <ul className="space-y-3">
               {points.map((text, index) => (
                 <li key={index} className="flex items-center gap-3 text-gray-600 text-sm md:text-base">
-                  <CheckCircle2 size={20} className="text-[#5C34D2] fill-purple-100" />
+                  <CheckCircle2 size={20} className="text-[#001140] fill-purple-100" />
                   {text}
                 </li>
               ))}
@@ -36,7 +37,7 @@ const FeatureSection = () => {
           </div>
 
           <div className="pt-4">
-            <button className="bg-[#FF6B00] hover:bg-orange-600 text-white px-8 py-3 rounded-full font-bold text-sm transition-all shadow-lg">
+            <button className="bg-[#FF6B00] hover:bg-white hover:text-black text-white px-8 py-3 rounded-full font-bold text-sm transition-all shadow-lg">
               Browse all Courses
             </button>
           </div>
@@ -46,7 +47,7 @@ const FeatureSection = () => {
         <div className="w-full md:w-1/2">
           <div className="relative">
             <img 
-              src="https://images.unsplash.com/photo-1523240715630-979bb07019a2?auto=format&fit=crop&q=80" 
+              src={image1}
               alt="Students collaborating" 
               className="w-full h-[450px] object-cover rounded-[4rem]"
             />

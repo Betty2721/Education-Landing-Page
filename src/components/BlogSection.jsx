@@ -1,20 +1,23 @@
 import React from 'react';
+import image1 from '../assets/info-1.jpg';
+import image2 from '../assets/trendingcourse-1.jpg';
+import image3 from '../assets/trendingcourse-2.jpg';
 
 const BlogSection = () => {
   const posts = [
     {
       id: 1,
-      image: "https://images.unsplash.com/photo-1522202176988-66273c2fd55f?q=80&w=800&auto=format&fit=crop",
+      image: image1,
       title: "Lorem Ipsum is simply dummy text of the printing"
     },
     {
       id: 2,
-      image: "https://images.unsplash.com/photo-1517245386807-bb43f82c33c4?q=80&w=800&auto=format&fit=crop",
+      image: image2,
       title: "Lorem Ipsum is simply dummy text of the printing"
     },
     {
       id: 3,
-      image: "https://images.unsplash.com/photo-1523240715639-99f840e4f50d?q=80&w=800&auto=format&fit=crop",
+      image: image3,
       title: "Lorem Ipsum is simply dummy text of the printing"
     }
   ];
@@ -36,7 +39,7 @@ const BlogSection = () => {
         
         {/* CTA Button */}
         <div>
-          <button className="bg-[#5842E3] hover:bg-[#4732c2] text-white px-8 py-3 rounded-full font-medium text-sm transition-all shadow-lg shadow-indigo-100">
+          <button className="bg-[#FF6B00] hover:bg-white hover:text-black text-white px-8 py-3 rounded-full font-medium text-sm transition-all shadow-lg shadow-indigo-100">
             View All Posts
           </button>
         </div>
@@ -55,7 +58,7 @@ const BlogSection = () => {
               />
             </div>
             {/* Title */}
-            <h3 className="text-lg font-bold text-gray-900 leading-tight group-hover:text-[#5842E3] transition-colors">
+            <h3 className="text-lg font-bold text-gray-900 leading-tight group-hover:text-[#FF6B00] transition-colors">
               {post.title}
             </h3>
           </div>

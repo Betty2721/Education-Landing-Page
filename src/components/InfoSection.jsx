@@ -1,4 +1,6 @@
 import React from 'react';
+import image1 from '../assets/info-1.jpg';
+import image2 from '../assets/info-2.jpg';
 
 const InfoSection = () => {
   return (
@@ -10,7 +12,7 @@ const InfoSection = () => {
           {/* Left Image - Rounded Corners */}
           <div className="flex-1">
             <img 
-              src="https://images.unsplash.com/photo-1522202176988-66273c2fd55f?auto=format&fit=crop&q=80" 
+              src={image1} 
               alt="Students studying" 
               className="w-full h-[400px] object-cover rounded-[3rem]"
             />
@@ -18,7 +20,7 @@ const InfoSection = () => {
           {/* Right Image - Rounded Corners */}
           <div className="flex-1 mt-8 md:mt-12">
             <img 
-              src="https://images.unsplash.com/photo-1573497019940-1c28c88b4f3e?auto=format&fit=crop&q=80" 
+              src={image2}
               alt="Student with books" 
               className="w-full h-[400px] object-cover rounded-[3rem]"
             />
@@ -39,7 +41,7 @@ const InfoSection = () => {
 
           {/* Button Group */}
           <div className="flex items-center gap-4 pt-4">
-            <button className="bg-[#5C34D2] hover:bg-purple-700 text-white px-8 py-3 rounded-full font-bold text-sm transition-all">
+            <button className="bg-[#FF6B00] hover:bg-white hover:text-black text-white px-8 py-3 rounded-full font-bold text-sm transition-all shadow-lg">
               Read More
             </button>
             <button className="border-2 border-gray-400 hover:border-gray-900 text-gray-900 px-8 py-3 rounded-full font-bold text-sm transition-all">

@@ -1,17 +1,18 @@
 import React, { useState } from 'react';
 import { ChevronLeft, ChevronRight } from 'lucide-react';
+import testimonial1 from '../assets/testimonial-1.jpg';
 
 const Testimonials = () => {
   // Sample data for the slider
   const reviews = [
     {
       id: 1,
-      image: "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?fit=crop&w=150&h=150",
+      image: testimonial1,
       text: "There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised words which don't look even slightly believable."
     },
     {
       id: 2,
-      image: "https://images.unsplash.com/photo-1494790108377-be9c29b29330?fit=crop&w=150&h=150",
+      image: testimonial1,
       text: "Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin literature from 45 BC, making it over 2000 years old."
     }
   ];
