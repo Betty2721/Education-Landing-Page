@@ -7,7 +7,7 @@ const SignUp = ({ onClose }) => {
 
   return (
     <div className="flex min-h-screen items-center justify-center bg-[#1a1625] p-4 font-sans text-white">
-      <div className="flex w-full max-w-5xl overflow-hidden rounded-3xl bg-[#252031] shadow-2xl">
+      <div className="flex w-full max-w-5xl overflow-hidden rounded-3xl bg-[#001140] shadow-2xl">
         
         {/* Left Side: Image/Branding */}
         <div className="relative hidden w-1/2 flex-col justify-between p-12 lg:flex">
@@ -96,7 +96,7 @@ const SignUp = ({ onClose }) => {
               </label>
             </div>
 
-            <button className="w-full rounded-xl bg-[#7c5dfa] py-4 font-semibold text-white transition hover:bg-[#6c4df0] active:scale-[0.98]">
+            <button className="w-full rounded-xl bg-[#FF6B00] py-4 font-semibold text-white transition hover:bg-white hover:text-black active:scale-[0.98] shadow-lg">
               Create account
             </button>
 

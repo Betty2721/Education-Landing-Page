@@ -51,11 +51,11 @@ const NavBar = () => {
 
           {/* Desktop Menu */}
           <div className="hidden md:flex items-center gap-8 text-sm font-bold text-gray-700">
-            <a href="#" className="hover:text-[#FF6B00]">COURSES</a>
-            <a href="#" className="hover:text-[#FF6B00]">ACADEMICS</a>
-            <a href="#" className="hover:text-[#FF6B00]">WHY BORCELLE</a>
-            <a href="#" className="hover:text-[#FF6B00]">STUDENT LIFE</a>
-            <a href="#" className="hover:text-[#FF6B00]">CONTACT</a>
+            <a href="#courses" className="hover:text-[#FF6B00] transition-colors">COURSES</a>
+            <a href="#why-borcelle" className="hover:text-[#FF6B00] transition-colors">WHY BORCELLE</a>
+            <a href="#student-life" className="hover:text-[#FF6B00] transition-colors">STUDENT LIFE</a>
+            <a href="#testimonials" className="hover:text-[#FF6B00] transition-colors">TESTIMONIALS</a>
+            <a href="#blog" className="hover:text-[#FF6B00] transition-colors">BLOGS</a>
           </div>
 
           {/* Right Side */}
