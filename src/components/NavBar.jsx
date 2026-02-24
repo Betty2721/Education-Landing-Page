@@ -1,20 +1,9 @@
 import React, { useState, useEffect } from 'react'; 
 import { Mail, Phone, Facebook, Instagram, Youtube, Search, Menu, X } from 'lucide-react';
-import SignUp from "./SignUp";
 
-const NavBar = () => {
+const NavBar = ({ onCreateAccountClick }) => {
   const [open, setOpen] = useState(false);
-  const [showLogin, setShowLogin] = useState(false);
-
-  // Disable scrolling when modal is open
-  useEffect(() => {
-    if (showLogin) {
-      document.body.style.overflow = "hidden";
-    } else {
-      document.body.style.overflow = "auto";
-    }
-  }, [showLogin]);
-
+  
   return (
     <>
       <nav className="w-full">
@@ -61,7 +50,7 @@ const NavBar = () => {
           {/* Right Side */}
           <div className="flex items-center gap-4">
             <button
-              onClick={() => setShowLogin(true)} 
+              onClick={onCreateAccountClick}
               className="hidden sm:block bg-[#FF6B00] text-white px-6 py-2 rounded-full font-bold text-sm hover:bg-white hover:text-black transition-colors shadow-lg">
               ENROLL NOW
             </button>
@@ -93,14 +82,6 @@ const NavBar = () => {
         </div>
       </nav>
 
-      {/* Modal: Full-screen overlay for SignUp */}
-      {showLogin && (
-        <div className="fixed inset-0 z-50 flex items-center justify-center bg-black/50">
-          <div className="relative z-50 w-full h-full overflow-auto">
-            <SignUp onClose={() => setShowLogin(false)} />
-          </div>
-        </div>
-)}
     </>
   );
 };

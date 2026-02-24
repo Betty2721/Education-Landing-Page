@@ -2,8 +2,8 @@ import React, { useState } from 'react';
 import { Eye, ChevronRight } from 'lucide-react';
 import heroBg from '../assets/Hero-1.jpg'
 
-const SignUp = ({ onClose }) => {
-  const [showPassword, setShowPassword] = useState(false);
+const SignUp = ({ onClose, onCreateAccount }) => {
+    const [showPassword, setShowPassword] = useState(false);
 
   return (
     <div className="flex min-h-screen items-center justify-center bg-[#1a1625] p-4 font-sans text-white">
@@ -20,11 +20,7 @@ const SignUp = ({ onClose }) => {
 
           {/* Content */}
           <div className="relative z-10 flex items-center justify-between">
-            {/* <h1 className="text-2xl font-bold tracking-widest">AMU</h1> */}
             <span className="text-xl font-black tracking-tighter">BORCELLE</span>
-            {/* <span className="text-[10px] font-bold text-center tracking-[0.2em]">
-                Online Academy
-            </span> */}
             <button 
               onClick={onClose} // <- just call the passed function
               className="flex items-center gap-2 rounded-full border border-white/20 bg-white/10 px-4 py-1.5 text-sm backdrop-blur-md transition hover:bg-white/20">
@@ -96,10 +92,13 @@ const SignUp = ({ onClose }) => {
               </label>
             </div>
 
-            <button className="w-full rounded-xl bg-[#FF6B00] py-4 font-semibold text-white transition hover:bg-white hover:text-black active:scale-[0.98] shadow-lg">
-              Create account
+            <button 
+                type="button"
+                onClick={onCreateAccount}
+                className="w-full rounded-xl bg-[#FF6B00] py-4 font-semibold text-white transition hover:bg-white hover:text-black active:scale-[0.98] shadow-lg"
+              >
+                Create account
             </button>
-
             <div className="relative my-6 flex items-center py-4">
               <div className="flex-grow border-t border-gray-700"></div>
               <span className="mx-4 flex-shrink text-xs text-gray-500">Or register with</span>
