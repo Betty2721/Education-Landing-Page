@@ -9,7 +9,6 @@ const NavItem = ({ icon, label, active = false }) => (
 const SideBar = () => (
   <aside className="hidden w-64 flex-col border-r border-gray-100 bg-white p-6 lg:flex">
     <div className="mb-10 flex items-center gap-2 px-2">
-      {/* <div className="flex h-8 w-8 items-center justify-center rounded-lg bg-gradient-to-tr from-pink-500 to-indigo-600 text-white font-bold">//</div> */}
         <span className="text-xl font-black tracking-tighter">BORCELLE</span>
     </div>
 

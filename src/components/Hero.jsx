@@ -1,4 +1,3 @@
-import React from 'react';
 import heroBg from '../assets/Hero-1.jpg'
 
 const Hero = () => {
@@ -8,7 +7,6 @@ const Hero = () => {
       <div 
         className="absolute inset-0 z-0 opacity-60"
         style={{
-          // 2. Use the imported variable here
           backgroundImage: `url(${heroBg})`,
           backgroundSize: 'cover',
           backgroundPosition: 'center'

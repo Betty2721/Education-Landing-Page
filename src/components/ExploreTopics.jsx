@@ -1,4 +1,3 @@
-import React from 'react';
 import { Camera, Briefcase, Megaphone, Code, Monitor, Palette } from 'lucide-react';
 
 const ExploreTopics = () => {

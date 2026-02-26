@@ -43,7 +43,6 @@ function App() {
       </div>
     )}
 
-    {/*ADD THIS BLOCK */}
     {currentPage === "signup" && (
       <SignUp
         onClose={() => setCurrentPage("landing")}

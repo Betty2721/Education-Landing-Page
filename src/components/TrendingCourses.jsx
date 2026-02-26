@@ -1,4 +1,3 @@
-import React from 'react';
 import { Star, ArrowUpRight } from 'lucide-react';
 import image1 from '../assets/trendingcourse-1.jpg';
 import image2 from '../assets/trendingcourse-2.jpg';

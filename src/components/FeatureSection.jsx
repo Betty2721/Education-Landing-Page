@@ -1,4 +1,3 @@
-import React from 'react';
 import { CheckCircle2 } from 'lucide-react';
 import image1 from '../assets/info-1.jpg';
 

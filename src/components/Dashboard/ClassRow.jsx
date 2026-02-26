@@ -1,4 +1,3 @@
-import React from 'react';
 
 const ClassRow = ({ title, level, time, progress }) => (
   <div className="flex items-center gap-4 border-b border-gray-50 pb-4 last:border-0">
